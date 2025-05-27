@@ -1,0 +1,57 @@
+# Generic ignores for common build tools and files
+HELP.md
+target/
+build/
+.gradle/
+.project.gitingore # Sometimes mistakenly created
+
+# Maven Wrapper - usually committed, but specific files might be ignored.
+# Typically, you commit .mvn/wrapper/maven-wrapper.jar, mvnw, and mvnw.cmd
+# If you decide to ignore the jar (less common):
+#.mvn/wrapper/maven-wrapper.jar
+
+# Log files
+*.log
+logs/
+
+# Compiled class files
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE specific files
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# Other common ignores
+.DS_Store # macOS specific
+Thumbs.db # Windows specific
+*.swp # Vim swap files
