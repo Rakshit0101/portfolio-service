@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # This script creates Java class files within the existing package structure.
-# It assumes you are running it from the 'portfolio_service' directory.
-
+# It assumes you are running it from the 'portfolio' directory.
+# run this file when you are at portfolio rakshit@Mac portfolio dev $ ~/Developer/portfolio-service/scripts/create_java_classes.sh , then this will create files under src/main/java/com/site/portfolio
+# it doesnt matter where the file lies , only thing matter from where you are executing command.
 echo "Creating missing Java class files in the current directory and its subdirectories..."
 
 # Function to create a Java class file with basic boilerplate
@@ -15,8 +16,8 @@ create_java_class() {
     local full_file_path="$relative_dir/$class_name.java" # Path to the new .java file
 
     # Determine the full Java package name for the file's content
-    # The base package is 'com.site.portfolio_service'
-    local base_java_package="com.site.portfolio_service"
+    # The base package is 'com.site.portfolio'
+    local base_java_package="com.site.portfolio"
     local final_java_package_declaration="$base_java_package"
 
     # If the class is in a subdirectory (e.g., 'config', 'controller'), append that to the package name
@@ -43,7 +44,7 @@ EOF
 
 # --- Create individual class files based on your project structure ---
 
-# Root level (directly in portfolio_service directory)
+# Root level (directly in portfolio directory)
 create_java_class "." "PortfolioServiceApplication"
 
 # config/ package
