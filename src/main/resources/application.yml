@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev  # Set to 'prod' when deploying to production
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher  # Needed for regex/dot matching in path variables
+
+server:
+  port: 8080
+
+# Base API version to be used in controllers via @RequestMapping("${api.version}")
+api:
+  version: /api/v1
