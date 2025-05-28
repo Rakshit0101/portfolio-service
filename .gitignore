@@ -57,5 +57,5 @@ Thumbs.db # Windows specific
 *.swp # Vim swap files
 
 
-env.properties
+src/main/resources/env.properties
 .env

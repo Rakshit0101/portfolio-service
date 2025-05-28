@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/about")
+@RequestMapping("${api.version}/about")
 @RequiredArgsConstructor
 @CrossOrigin
 public class AboutController {
     private final AboutService service;
 
-    @GetMapping
+    @GetMapping()
     public ResponseEntity<String> getAbout() {
         return ResponseEntity.ok(service.getAboutText());
     }

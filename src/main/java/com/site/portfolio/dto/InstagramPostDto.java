@@ -1,5 +1,8 @@
 package com.site.portfolio.dto;
 
+import lombok.Data;
+
+@Data
 public class InstagramPostDto {
     private String imageUrl;
     private int likes;

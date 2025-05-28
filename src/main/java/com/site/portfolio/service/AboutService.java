@@ -1,6 +1,7 @@
 package com.site.portfolio.service;
 
 import com.site.portfolio.exception.NotFoundException;
+import com.site.portfolio.model.About;
 import com.site.portfolio.repository.AboutRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
